@@ -26,7 +26,7 @@ export const List = styled.li`
 list-style: none;
 margin: 1rem;
 `
-export const Btn = styled.button`
+export const Btn = styled.h3`
 border: none;
 border-radius:0.2rem;
 width: 3rem;

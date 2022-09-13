@@ -1,9 +1,10 @@
+import { CardList } from "../CardList"
 
 
 export const Home = () => {
     return(
         <>
-        <p>123456</p>
+        <CardList/>
         </>
     )
 }
