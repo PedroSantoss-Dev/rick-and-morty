@@ -42,18 +42,16 @@ export const CardList = () => {
       }
       
     }
+    async function loadData() {
+      setLoading(true);
+      const apiResponse = await Api.get(`character/?page=${page}`);
+
+      setCharacter(apiResponse.data.results);
+      setLoading(false);
+    }
 
     useEffect(()  =>   {
-      async function loadData() {
-        setLoading(true);
-        const apiResponse = await Api.get(`character/?page=${page}`);
-  
-        setCharacter(apiResponse.data.results);
-        setLoading(false);
-      }
-  
-      loadData();
-        
+      loadData();   
     },[loading])
   
     return(
@@ -69,6 +67,7 @@ export const CardList = () => {
                 character.map((item) => (
                     <Card 
                      key ={item.id}
+                     id = {item.id}
                      name = {item.name}
                      img = {item.image}
                      status = {item.status}

@@ -1,7 +1,11 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-
-export const Cartao = styled.section`
+export const Direct = styled(Link)`
+text-decoration:none;
+`;
+export const Cartao = styled.section
+`
 width: 12rem;
 height: 14rem;
 display: flex;
