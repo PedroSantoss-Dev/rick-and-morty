@@ -4,6 +4,12 @@ export const Container = styled.section`
 width:100% ;
 height:100vh ;
 display: flex;
+@media (max-width: 600px) {
+    height:100%;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
 `;
 export const Content = styled.div`
 width:75% ;
