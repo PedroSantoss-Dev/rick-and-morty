@@ -7,7 +7,7 @@ export const Select = ({name, ChangeId, total}) => {
             onChange={(e) => ChangeId(e.target.value)}
             id={name}
             >
-            <option value={1}> Choose</option>
+            <option value="1"> Choose</option>
             {
                 [...Array(total).keys()].map((v,i ) => {
                     return(

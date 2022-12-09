@@ -13,9 +13,19 @@ display: flex;
 `;
 export const Content = styled.div`
 width:75% ;
+height:100%;
 display: flex;
-background-color: black;
+flex-direction: column;
+justify-content: center;
+aling-items: center;
 `;
+export const CardContainer = styled.div`
+width:100%;
+height: 75%;
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+`
 export const filter = styled.div`
 width:25%;
 display: flex;
