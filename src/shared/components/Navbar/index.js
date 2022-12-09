@@ -6,7 +6,7 @@ export const Navbar = () => {
                 <N.Menu>
                     <N.List><N.Btn to="/">Character</N.Btn></N.List>
                     <N.List><N.Btn to="/episode">Episode</N.Btn></N.List>
-                    <N.List><N.Btn to="#">Location</N.Btn></N.List>
+                    <N.List><N.Btn to="/location">Location</N.Btn></N.List>
                 </N.Menu>
             </N.Nav>
     )
